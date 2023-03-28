@@ -1,0 +1,805 @@
+{
+	"id": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+	"name": "InventariosNode",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Estado",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"order": [
+				"3ba4c919-5352-7eef-c598-879613d45179",
+				"25b4906a-42a5-da93-b5c3-ef033e9ef7ad",
+				"a788bf06-8e2c-a2dc-e9cb-648734eab5e6",
+				"fbf0d160-c3c0-5b45-6103-2a48df56dfe2",
+				"1ed6c5f5-5a00-4238-671f-5342ea6c678e"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "cc521bc5-7df7-7da9-0a2f-1fa341821495"
+		},
+		{
+			"name": "Inventario",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"order": [
+				"bfe26a14-1332-cef5-a594-7f772389c4c5",
+				"3c0fefb6-dcda-a766-094f-54c7acb40a8c"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "364cd7a4-edb4-745b-16af-dd4149f94cde"
+		},
+		{
+			"name": "Marca",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"order": [
+				"ad561c4e-6235-f4fa-8760-c6556049df2d",
+				"4ec17064-13c0-b1e2-638d-590cea143fff",
+				"27d30267-6862-e35d-087d-4c392755fc09",
+				"659bd3e3-cd15-28b3-629a-f267218488aa",
+				"70dc458a-f5cb-368d-ddc0-4b01e341db22"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "4d90b434-fd64-b8f8-0f2a-92e4475cd5b4"
+		},
+		{
+			"name": "TipoEquipo",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"order": [
+				"28c5b785-ab21-26ba-601c-10391674cbfe",
+				"c4a00467-a621-1361-034f-77262c06228c",
+				"3d5823e9-017a-d250-5501-565d28033d6d",
+				"4f4b223f-a0f7-7ea7-f293-062e1764fffd",
+				"b65785ac-32e0-d642-fc1c-ec9dd0f1f34a"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "ef7d6179-6179-6c8a-8e4d-192dd00e4c36"
+		},
+		{
+			"name": "Usuario",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"order": [
+				"80a95d43-8815-f4d4-24c6-2c75f6f3bef3",
+				"3ac13ded-7b5d-1b97-8e7a-1e1b4b3ee4eb",
+				"70802c8f-1b78-7c14-3a62-f7ae800f5eaf",
+				"debf0ffa-b1c9-f63c-73db-060ec6f74fd9",
+				"cab007bf-8ecf-0fbc-8343-6c807b49b281"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "07a87e54-b8b2-02d0-6291-7495635d3392"
+		}
+	],
+	"folders_order": [
+		"ef7d6179-6179-6c8a-8e4d-192dd00e4c36",
+		"cc521bc5-7df7-7da9-0a2f-1fa341821495",
+		"364cd7a4-edb4-745b-16af-dd4149f94cde",
+		"4d90b434-fd64-b8f8-0f2a-92e4475cd5b4",
+		"07a87e54-b8b2-02d0-6291-7495635d3392"
+	],
+	"timestamp": 1663381200511,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1ed6c5f5-5a00-4238-671f-5342ea6c678e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/estados/632e601f051574ef583c673e",
+			"folder": "cc521bc5-7df7-7da9-0a2f-1fa341821495",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504979419,
+			"name": "Borrar Estado por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "25b4906a-42a5-da93-b5c3-ef033e9ef7ad",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/estados?estado=true",
+			"folder": "cc521bc5-7df7-7da9-0a2f-1fa341821495",
+			"queryParams": [
+				{
+					"key": "estado",
+					"value": "true",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504974170,
+			"name": "Consultar Estados",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Cómputo\"\n}"
+		},
+		{
+			"id": "27d30267-6862-e35d-087d-4c392755fc09",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/marcas/632e5b229388c67918dcb7e8",
+			"folder": "4d90b434-fd64-b8f8-0f2a-92e4475cd5b4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664505015797,
+			"name": "Consultar marca por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Lenovo\"\n}"
+		},
+		{
+			"id": "28c5b785-ab21-26ba-601c-10391674cbfe",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/tipoequipos",
+			"folder": "ef7d6179-6179-6c8a-8e4d-192dd00e4c36",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504962605,
+			"name": "CreateTipoEquipo",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Computo\"\n}"
+		},
+		{
+			"id": "3ac13ded-7b5d-1b97-8e7a-1e1b4b3ee4eb",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/usuarios?estado=true",
+			"folder": "07a87e54-b8b2-02d0-6291-7495635d3392",
+			"queryParams": [
+				{
+					"key": "estado",
+					"value": "true",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664505039092,
+			"name": "Consultar todos los usuarios",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Samsung\"\n}"
+		},
+		{
+			"id": "3ba4c919-5352-7eef-c598-879613d45179",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/estados",
+			"folder": "cc521bc5-7df7-7da9-0a2f-1fa341821495",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504972412,
+			"name": "Crear Estado",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"otra cosa\"\n}"
+		},
+		{
+			"id": "3c0fefb6-dcda-a766-094f-54c7acb40a8c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/inventarios",
+			"folder": "364cd7a4-edb4-745b-16af-dd4149f94cde",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504995325,
+			"name": "Crear inventario",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"serial\": \"1111-2222-4447\",\n\t\"modelo\": \"2021\",\n\t\"descripcion\": \"\",\n\t\"foto\": \"\",\n\t\"color\": \"\",\n\t\"fechaCompra\": \"2022-01-01\",\n\t\"precio\": \"300\",\n\t\"usuario\": {\n\t\t\"_id\":\"632e63124c815f15afa381ca\"\n\t},\n\t\"marca\": {\n\t\t\"_id\": \"632e5b079388c67918dcb7e2\"\n\t},\n\t\"estado\": {\n\t\t\"_id\": \"632e5f8a051574ef583c672f\"\n\t},\n\t\"tipoEquipo\": {\n\t\t\"_id\": \"632e5f06051574ef583c6728\"\n\t}\n}"
+		},
+		{
+			"id": "3d5823e9-017a-d250-5501-565d28033d6d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/tipoequipos/632e5f06051574ef583c6728",
+			"folder": "ef7d6179-6179-6c8a-8e4d-192dd00e4c36",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504966151,
+			"name": "Consultar Tipo Equipo por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Cómputo\"\n}"
+		},
+		{
+			"id": "4ec17064-13c0-b1e2-638d-590cea143fff",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/marcas?estado=true",
+			"folder": "4d90b434-fd64-b8f8-0f2a-92e4475cd5b4",
+			"queryParams": [
+				{
+					"key": "estado",
+					"value": "true",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664505012361,
+			"name": "Consultar todas las marcas",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Lenovo\"\n}"
+		},
+		{
+			"id": "4f4b223f-a0f7-7ea7-f293-062e1764fffd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/tipoequipos/632e5ea5051574ef583c671b",
+			"folder": "ef7d6179-6179-6c8a-8e4d-192dd00e4c36",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504968031,
+			"name": "Actualizar Tipo Equipo por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"estado\": false\n}"
+		},
+		{
+			"id": "659bd3e3-cd15-28b3-629a-f267218488aa",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/marcas/632e5b229388c67918dcb7e8",
+			"folder": "4d90b434-fd64-b8f8-0f2a-92e4475cd5b4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664505020489,
+			"name": "Actualizar marca por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"ACER+\",\n\t\"estado\": false\n}"
+		},
+		{
+			"id": "70802c8f-1b78-7c14-3a62-f7ae800f5eaf",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/usuarios/632e635a4c815f15afa381cd",
+			"folder": "07a87e54-b8b2-02d0-6291-7495635d3392",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664505043317,
+			"name": "Consultar usuario por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Samsung\"\n}"
+		},
+		{
+			"id": "70dc458a-f5cb-368d-ddc0-4b01e341db22",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/marcas/632e5b229388c67918dcb7e8",
+			"folder": "4d90b434-fd64-b8f8-0f2a-92e4475cd5b4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664505025890,
+			"name": "Borrar marca por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "80a95d43-8815-f4d4-24c6-2c75f6f3bef3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/usuarios",
+			"folder": "07a87e54-b8b2-02d0-6291-7495635d3392",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664505033491,
+			"name": "Crear Usuario",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Yeison Angulo\",\n\t\"email\": \"JSONAngulo@email.com\"\n}"
+		},
+		{
+			"id": "a788bf06-8e2c-a2dc-e9cb-648734eab5e6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/estados/632e5f8a051574ef583c672f",
+			"folder": "cc521bc5-7df7-7da9-0a2f-1fa341821495",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504976025,
+			"name": "Consultar Estado por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Cómputo\"\n}"
+		},
+		{
+			"id": "ad561c4e-6235-f4fa-8760-c6556049df2d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/marcas",
+			"folder": "364cd7a4-edb4-745b-16af-dd4149f94cde",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664505007072,
+			"name": "Crear Marca",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Samsung\"\n}"
+		},
+		{
+			"id": "b65785ac-32e0-d642-fc1c-ec9dd0f1f34a",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/tipoequipos/6336537c67d92003e5625e89",
+			"folder": "ef7d6179-6179-6c8a-8e4d-192dd00e4c36",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504969839,
+			"name": "Borrar Tipo Equipo por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": []
+		},
+		{
+			"id": "bfe26a14-1332-cef5-a594-7f772389c4c5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/inventarios",
+			"folder": "cc521bc5-7df7-7da9-0a2f-1fa341821495",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504993635,
+			"name": "Consultar Inventarios",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Cómputo\"\n}"
+		},
+		{
+			"id": "c4a00467-a621-1361-034f-77262c06228c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/tipoequipos?estado=true",
+			"folder": "ef7d6179-6179-6c8a-8e4d-192dd00e4c36",
+			"queryParams": [
+				{
+					"key": "estado",
+					"value": "true",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504964466,
+			"name": "Consultar Tipos Equipo",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\": \"Cómputo\"\n}"
+		},
+		{
+			"id": "cab007bf-8ecf-0fbc-8343-6c807b49b281",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/usuarios/632e635a4c815f15afa381cd",
+			"folder": "07a87e54-b8b2-02d0-6291-7495635d3392",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664505051418,
+			"name": "Borrar usuario por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "debf0ffa-b1c9-f63c-73db-060ec6f74fd9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/usuarios/632e63724c815f15afa381d0",
+			"folder": "07a87e54-b8b2-02d0-6291-7495635d3392",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664505047599,
+			"name": "Editar usuario por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"estado\": false\n}"
+		},
+		{
+			"id": "fbf0d160-c3c0-5b45-6103-2a48df56dfe2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}/estados/632e5f8a051574ef583c672f",
+			"folder": "cc521bc5-7df7-7da9-0a2f-1fa341821495",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1664504977766,
+			"name": "Actualizar Estado por ID",
+			"description": "",
+			"collectionId": "1cafe551-784b-acbd-7907-bcfb87e9d287",
+			"responses": [],
+			"rawModeData": "{\n\t\"estado\": true\n}"
+		}
+	]
+}
