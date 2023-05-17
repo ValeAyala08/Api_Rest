@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 import React, { useEffect, useState } from 'react'
 import { obtenerUsuario, crearUsuario, editarUsuarioPorID, borrarUsuarioPorID} from '../../services/UsuarioService'
-import HeaderTable from '../ui/HeaderTable'
+import UsuariosTable from '../ui/UsuariosTable'
 import Modal from '../ui/Modal'
 
 export default function Usuario() {
@@ -13,21 +13,22 @@ export default function Usuario() {
   const [usuario, setUsuario] = useState({
     nombre: '',
     estado: true,
-    email: '',
+    email: '@gmail.com',
     estado: true
     
+    
   })
-  const [loadingSave, setLoadingSave] = useState(false)  //{
-   // status: false,
-    //msg: ''
- // })
+  const [errorSend, setErrorSend] = useState({
+    status: false,
+    msg: ''
+ })
 
    const listUsuario = async () => {
-    //setLoading(true)
+   setLoading(true)
     try{
       setError(false)
       const { data } = await obtenerUsuario(query)
-      console.log(data)
+      //console.log(data)
       setUsuarios(data)
       setLoading(true)
 
@@ -49,6 +50,29 @@ export default function Usuario() {
   const cambiarSwitche = () => {
     setQuery(!query)
   }
+  const guardarUsuario = async () => {
+    setErrorSend({status: false, msg: ''})
+    setLoading(true)
+    try{
+      const res = await crearUsuario(usuario)
+      console.log(res)
+      setLoading(true)
+      setUsuario({
+        nombre: '',
+        email: ''})
+      listUsuario()
+    }catch(e){
+      const {status: data} = e.response;
+      /*if(status == 400){
+        console.log(data.msg)
+        
+      }*/
+      setErrorSend({status: true, msg: data.msg})
+      console.log(e)
+      setLoading(false)
+    }
+    
+  }
 
   const handleChange = (e) => {
     setUsuario({
@@ -56,37 +80,6 @@ export default function Usuario() {
       [e.target.name]: e.target.value
     })
   }
-
-  const guardarUsuario = async () => {
-    try{
-        setError(false)
-        loadingSave(true)//{status: false, msg: ''})
-        //setLoading(true)
-      const res = await crearUsuario(usuario)
-      console.log(res)
-      //setLoading(true)
-      setUsuarios({nombre: ''})
-      listUsuario()
-      setTimeout(() => {
-        setLoadingSave(false)
-      }, 500)
-    }catch(e){
-      const {status: data} = e.response;
-     
-      loadingSave({status: true, msg: data.msg})
-      console.log(e)
-      setLoadingSave(false)
-    }
-    
-  }
-
-
-//   const handleChange = e => {
-   // setUsuario({
-      //...usuario, 
-      //[e.target.name]: e.target.value
-   // })
-  //}
 
   const borrarUsuario = async (e) => {
     setLoading(true)
@@ -107,7 +100,7 @@ export default function Usuario() {
 
   const editarUsuario = async (e) => {
     e.preventDefault()
-    setLoadingSave(true)
+    setErrorSend(true)
     try{
       setError(false)
       const resp = await editarUsuarioPorID(usuario._id, usuario);
@@ -133,7 +126,8 @@ export default function Usuario() {
   const resetUsuario =() => {
     setUsuario({
       nombre: '',
-      estado: true
+      estado: true,
+      email:'@gmail.com'
     })
   }
 
@@ -244,9 +238,9 @@ export default function Usuario() {
           </div>
           </div>)
         }
-        {loadingSave.status && (
+        {errorSend.status && (
         <div className="alert alert-danger" role="alert">
-          {loadingSave.msg}
+          {errorSend.msg}
           </div>)
         }
         {
@@ -256,7 +250,7 @@ export default function Usuario() {
           </div>)
         }
         <table className="table">
-        <HeaderTable />
+        <UsuariosTable />
         <tbody>
           {
             usuarios.map((usuario,index) => {
